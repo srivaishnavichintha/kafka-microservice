@@ -20,3 +20,8 @@ A foundational microservice implementing the Producer-Consumer pattern using Apa
 
 ## Idempotency Logic
 The consumer uses a `Set` to store `eventId`s. If an event with an existing ID arrives, it is logged as a duplicate and ignored, satisfying the requirement for resilient distributed messaging.
+
+### System Verification
+![Docker Logs](./screenshots/docker_logs.png)
+![Producer API Output](./screenshots/producer_api.png)
+![Consumer Storage](./screenshots/consumer_storage.png)
